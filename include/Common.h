@@ -1,5 +1,28 @@
+
 #pragma once
-enum VehicleType { CAR, BUS, TRUCK, POLICE, FIRE_TRUCK, AMBULANCE };
-enum EventType   { ARRIVAL, SIGNAL_CHANGE, DEPARTURE };
-enum SignalState { RED, YELLOW, GREEN };
-enum SignalMode  { FIXED, ADAPTIVE };
+
+enum class VehicleType
+{
+    NORMAL,
+    EMERGENCY
+};
+
+enum class EventType
+{
+    VEHICLE_ARRIVAL,
+    SIGNAL_CHANGE,
+    VEHICLE_DEPARTURE
+};
+
+enum class SignalState
+{
+    RED,
+    YELLOW,
+    GREEN
+};
+
+enum class SignalMode
+{
+    FIXED,
+    ADAPTIVE
+};
